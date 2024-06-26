@@ -1,6 +1,6 @@
 from Board_2048 import Board
-import turtle
 import math
+import turtle
 
 def main():
     '''
@@ -19,7 +19,14 @@ def main():
     '''
     draw_board_bg()
     game = Board()
+    game.board = {}
+    game.size = 4
+    game.new_board()
+    print('Game ON ! !\n\n')
+    print(game)
+    draw_board(game)
     
+
     def draw_print():
         '''
         this function updates screen on turtle and terminal
@@ -149,8 +156,14 @@ def draw_board_bg():
     t.goto(-150, 300)
     t.pu()
     t.write('*** Welcome to 2048 ***', font = ('Comic Sans MS', 25, 'normal'))
+    t.goto(0, -150)
+    t.pencolor('red')
+    t.write('    Game On !', font = ('Comic Sans MS', 18, 'normal'))
+    t.goto(-50, -180)
+    t.write('Press Arrow Key for playing or Any number on the Menu', font = ('Comic Sans MS', 14, 'normal'))
+    t.pencolor(127, 0, 255)
     t.goto(-200, -250)
-    t.write('join the numbers and get to the 2048 tile!', font = ('Comic Sans MS', 18, 'normal'))
+    t.write('Join the numbers and get to the 2048 tile!', font = ('Comic Sans MS', 18, 'normal'))
 
     t.pu()
     t.goto(-310, 120)
