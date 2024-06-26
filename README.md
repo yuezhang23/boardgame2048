@@ -1,10 +1,10 @@
 # Board 2048 Program
-This is a one-player board game with the same rules and features as shown in the 2048 board game from Apple Store. 
+This is a one-player board game with the same rules and features as in the 2048 board game from Apple Store. 
 
 ### How to Play
 
 #### 1. Start a New Game
-On running the program, only the menu is shown on the Turtle screen. The user can choose from menu options such as 1, 2, 3 to initialize the board.
+On running the program, only the menu is shown on the Turtle screen. Choose from menu options such as 1, 2, 3 to initialize the board.
 - Press 1 to start a 4x4 size game any time.
 - Press 2 to quit the game any time.
 - Press 3 to challenge a bigger board.
