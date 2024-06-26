@@ -2,7 +2,8 @@
 This is a one-player board game with the same rules and features as in the 2048 board game from Apple Store. 
 
 ### How to Play
-
+#### Download:  
+- [Board 2048](https://github.com/yuezhang23/boardgame2048/releases/download/board2048/main)
 #### 1. Start a New Game
 On running the program, only the menu is shown on the Turtle screen. Choose from menu options such as 1, 2, 3 to initialize the board.
 - Press 1 to start a 4x4 size game any time.
