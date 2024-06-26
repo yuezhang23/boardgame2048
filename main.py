@@ -19,12 +19,6 @@ def main():
     '''
     draw_board_bg()
     game = Board()
-    game.board = {}
-    game.size = 4
-    game.new_board()
-    print('Game ON ! !\n\n')
-    print(game)
-    draw_board(game)
     
 
     def draw_print():
@@ -156,11 +150,9 @@ def draw_board_bg():
     t.goto(-150, 300)
     t.pu()
     t.write('*** Welcome to 2048 ***', font = ('Comic Sans MS', 25, 'normal'))
-    t.goto(0, -150)
     t.pencolor('red')
-    t.write('    Game On !', font = ('Comic Sans MS', 18, 'normal'))
-    t.goto(-50, -180)
-    t.write('Press Arrow Key for playing or Any number on the Menu', font = ('Comic Sans MS', 14, 'normal'))
+    t.goto(-200, -220)
+    t.write('PRESS a number on the Menu and play with arrow key', font = ('Comic Sans MS', 14, 'normal'))
     t.pencolor(127, 0, 255)
     t.goto(-200, -250)
     t.write('Join the numbers and get to the 2048 tile!', font = ('Comic Sans MS', 18, 'normal'))
@@ -231,7 +223,7 @@ def draw_lose(game: Board):
     '''
     if game.is_lose():
         turtle.pu()
-        turtle.goto(-290, - 120)
+        turtle.goto(-300, -20)
         turtle.pencolor('green')
         turtle.write(f"***Game Over***", font = ('Comic Sans MS', 28, 'normal'))
 
@@ -242,7 +234,7 @@ def draw_win(game: Board):
     '''
     if game.is_win():
         turtle.pu()
-        turtle.goto(-290, - 120)              
+        turtle.goto(-300, - 20)              
         turtle.pencolor(255, 51, 255)
         turtle.write(f"Congratulations!\n\n***You Win***", font = ('Comic Sans MS', 25, 'normal'))
 
